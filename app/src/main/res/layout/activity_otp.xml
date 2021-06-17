@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP_Activity">
+
+    <TextView
+        android:id="@+id/textGetOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:text="@string/text_get_otp"
+        android:textColor="@color/black"
+        android:drawableRight="@android:drawable/ic_menu_edit"
+        android:textSize="@dimen/otp_title_height"
+        android:drawablePadding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textEnterPhone"
+        android:layout_width="@dimen/otp_title_width_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:fontFamily="@font/gilroy_extra_bold"
+        android:text="@string/enter_your_otp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mobile_title_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGetOTP" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:gravity="center"
+        android:hint="@string/enter_otp_hint"
+        android:textSize="@dimen/otp_title_height"
+        android:fontFamily="@font/gilroy_extra_bold"
+        android:inputType="phone"
+        android:maxLength="4"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_corners"
+        android:paddingHorizontal="@dimen/phone_padding_h"
+        android:paddingVertical="@dimen/phone_padding_v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnterPhone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:textSize="@dimen/btn_txt_size"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="@string/continue_btn"
+        style="@style/CardView.Dark"
+        android:fontFamily="@font/gilroy_extra_bold"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="98dp"
+        android:text="@string/enter_time_hint"
+        android:textSize="@dimen/btn_txt_size"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gilroy_extra_bold"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textEnterPhone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

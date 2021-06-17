@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textGetOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:text="@string/text_get_otp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/otp_title_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textEnterPhone"
+        android:layout_width="@dimen/mobile_title_width_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:fontFamily="@font/gilroy_extra_bold"
+        android:text="@string/enter_your_phone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mobile_title_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGetOTP" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:gravity="center"
+        android:hint="@string/enter_country_hint"
+        android:textSize="@dimen/otp_title_height"
+        android:fontFamily="@font/gilroy_extra_bold"
+        android:inputType="phone"
+        android:maxLength="4"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_corners"
+        android:paddingHorizontal="@dimen/phone_padding_h"
+        android:paddingVertical="@dimen/phone_padding_v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnterPhone" />
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/top_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:hint="@string/enter_your_phone_hint"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textSize="@dimen/otp_title_height"
+        android:fontFamily="@font/gilroy_extra_bold"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:paddingHorizontal="@dimen/phone_padding_h"
+        android:paddingVertical="@dimen/phone_padding_v"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/textEnterPhone" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/title_start_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:textSize="@dimen/btn_txt_size"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:text="@string/continue_btn"
+        style="@style/CardView.Dark"
+        android:fontFamily="@font/gilroy_extra_bold"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

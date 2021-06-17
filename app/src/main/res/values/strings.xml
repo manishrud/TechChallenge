@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tech Challenge</string>
+    <string name="text_get_otp">Get OTP</string>
+    <string name="enter_your_phone">Enter Your Phone Number</string>
+    <string name="enter_your_otp">Enter Your OTP</string>
+    <string name="enter_your_phone_hint">1234567890</string>
+    <string name="enter_country_hint">+91</string>
+    <string name="enter_otp_hint">0000</string>
+    <string name="enter_time_hint">00:00</string>
+    <string name="continue_btn">Continue</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Discover</string>
+    <string name="title_home_txt">Notes</string>
+    <string name="title_dashboard">Notes</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_notifications">Profile</string>
+    <string name="note_sub_title">Personal Message to you</string>
+    <string name="interested_title">Interested In You</string>
+    <string name="update_text">Premium members can see all their likes at once</string>
+    <string name="update_btn">Upgrade</string>
+    <string name="notes_tap_txt">Tap to review 50+ notes</string>
+</resources>
